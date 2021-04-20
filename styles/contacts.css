@@ -3,95 +3,120 @@ html, body{
     padding: 0px;
 }
 
-.header-minimalist{
-    position: fixed;
-    z-index: 99;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
-    grid-template-rows: 75px;
-    grid-template-areas:
-    "logo portfolio1 portfolio2 portfolio3 about contacts social-media";
+
+
+
+
+.header-minimalist {
+  display: grid;
+  /* display: none; */
+  position: fixed;
+  z-index: 99;
+  background-color: black;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+  grid-template-rows: 75px;
+  grid-template-areas: "logo portfolio1 portfolio2 portfolio3 about contacts social-media";
 }
 
-.header-minimalist a{
-    text-decoration: none;
-    color: black;
-    line-height: 17px;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 200ms color ease-in;
-    transition: 200ms font-size ease-in;
+.header-mobile {
+  display: none;
 }
 
+.header-minimalist a {
+  text-decoration: none;
+  color: #f0f8ff;
+  line-height: 17px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+  transition: 200ms font-size ease-in;
+}
+
+#logo-mobile {
+  /* display: none; */
+  width: 70px;
+  height: auto;
+  padding-top: 6px;
+}
+
+.social-icons img {
+  width: 50px;
+  height: auto;
+}
 .header-minimalist a:hover{
     color: gold;
 }
-    #logo{
-        grid-area: logo;
+#logo{
+    grid-area: logo;
+}
+
+    #logo img{
+        object-fit: contain;
+        width: 100%;
+        max-height: 100%;
     }
 
-        #logo img{
-            object-fit: contain;
-            width: 100%;
-            max-height: 100%;
-        }
+#about{
+    align-self: center;
+    justify-self: center;
+    grid-area: about;
+}
 
-    #about{
-        align-self: center;
-        justify-self: center;
-        grid-area: about;
+#portfolio1{
+    align-self: center;
+    justify-self: center;
+    grid-area: portfolio1;
+}
+
+#portfolio2{
+    align-self: center;
+    justify-self: center;
+    grid-area: portfolio2;
+}
+
+#portfolio3{
+    align-self: center;
+    justify-self: center;
+    grid-area: portfolio3;
+}
+
+#contacts{
+    align-self: center;
+    justify-self: center;
+    grid-area: contacts;
+}
+
+    #contacts a{
+        color: gold;
     }
 
-    #portfolio1{
-        align-self: center;
-        justify-self: center;
-        grid-area: portfolio1;
+    #contacts a:hover{
+        font-size: 12px;
     }
 
-    #portfolio2{
-        align-self: center;
-        justify-self: center;
-        grid-area: portfolio2;
-    }
+.social-media{
+    align-self: center;
+    justify-self: end;
+    grid-area: social-media;
+}
 
-    #portfolio3{
-        align-self: center;
-        justify-self: center;
-        grid-area: portfolio3;
-    }
+.social-media img{
+    padding: 15px;
+    width: 20px;
+    height: 20px
+}
 
-    #contacts{
-        align-self: center;
-        justify-self: center;
-        grid-area: contacts;
-        scale: 1.4;
-    }
+#social-media img:hover{
+    width: 25px;
+    height: 25px
+}
 
-        #contacts a{
-            color: gold;
-        }
 
-        #contacts a:hover{
-            font-size: 12px;
-        }
 
-    .social-media{
-        align-self: center;
-        justify-self: end;
-        grid-area: social-media;
-    }
 
-    .social-media img{
-        padding: 15px;
-        width: 20px;
-        height: 20px
-    }
 
-    #social-media img:hover{
-        width: 25px;
-        height: 25px
-    }
+
 
 #contacts-title{
     height: 100vh;
@@ -181,6 +206,20 @@ html, body{
     #cop{
         grid-area: cop;
     }
+
+@media only screen and (max-device-width: 1200px) {
+    .header-minimalist {
+        display: none;
+    }
+
+    .header-mobile {
+        display: inherit;
+    }
+    html,
+    body {
+        background-color: #505050;
+    }
+}
 
 @media (min-height: 650px){
 
