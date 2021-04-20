@@ -484,53 +484,6 @@ html {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer-minimalist{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -564,3 +517,17 @@ html {
     #cop{
         grid-area: cop;
     }
+
+@media only screen and (max-device-width: 1200px) {
+    .header-minimalist {
+        display: none;
+    }
+
+    .header-mobile {
+        display: inherit;
+    }
+    html,
+    body {
+        background-color: #505050;
+    }
+}
