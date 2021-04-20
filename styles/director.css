@@ -9,24 +9,41 @@ p {
 }
 
 .header-minimalist {
-  position: fixed;
-  background-color: black;
-  z-index: 99;
   display: grid;
+  /* display: none; */
+  position: fixed;
+  z-index: 99;
+  background-color: black;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
   grid-template-rows: 75px;
   grid-template-areas: "logo portfolio1 portfolio2 portfolio3 about contacts social-media";
 }
 
+.header-mobile {
+  display: none;
+}
+
 .header-minimalist a {
   text-decoration: none;
-  color: aliceblue;
+  color: #f0f8ff;
   line-height: 17px;
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
   transition: 200ms color ease-in;
   transition: 200ms font-size ease-in;
+}
+
+#logo-mobile {
+  /* display: none; */
+  width: 70px;
+  height: auto;
+  padding-top: 6px;
+}
+
+.social-icons img {
+  width: 50px;
+  height: auto;
 }
 
 .header-minimalist a:hover {
@@ -143,7 +160,7 @@ p {
   text-align: right;
   align-self: end;
   justify-self: end;
-  padding-right: 330px;
+  padding-right: 360px;
 }
 
 #personal-contacts {
@@ -258,4 +275,18 @@ p {
 
 #cop {
   grid-area: cop;
+}
+
+@media only screen and (max-device-width: 1200px) {
+    .header-minimalist {
+        display: none;
+    }
+
+    .header-mobile {
+        display: inherit;
+    }
+    html,
+    body {
+        background-color: #505050;
+    }
 }

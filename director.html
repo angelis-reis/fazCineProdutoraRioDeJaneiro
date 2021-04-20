@@ -9,6 +9,8 @@
     <title>Diretor | FazCine</title>
 
     <link rel="stylesheet" type="text/css" href="styles/director.css">
+    <link type="text/css" rel="stylesheet" href="styles/mmenu.css" />
+
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
@@ -71,13 +73,49 @@
 
     </header>
 
+    <!-- <header class="header-mobile"> -->
+
+    <div id="page" class="header-mobile">
+        <div class="header">
+            <a href="#menu"><span></span></a>
+
+            <img
+            id="logo-mobile"
+            href="index.html"
+            src="images/logo.png"
+            alt="Logo FazCine Produtora"
+            />
+        </div>
+
+        <nav id="menu">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cine.html">Cinema e TV</a></li>
+            <li><a href="programs.html">Projetos Especiais</a></li>
+            <li><a href="institutions.html">Institucionais</a></li>
+            <li><a href="director.html">Quem Somos</a></li>
+            <li><a href="contacts.html">Contatos</a></li>
+            <li>
+                <a class="social-icons"target="_blank" href="https://www.facebook.com/fazcine2016/">
+                <img src="images/face-icon.png" />
+                </a>
+                <!-- <a class="social-icons" target="_blank" href="https://www.facebook.com/fazcine2016/">
+                <img src="images/linkedin-icon.png" />
+                </a> -->
+            </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- </header> -->
+
 
     <section id="photo">
 
       <div id="name"> <h1>Ivan. </h1> </div>
 
       <div id="job">
-        <h4>Diretor</h4>
+        <h4>Criador</h4>
 
       </div>
 
@@ -152,6 +190,13 @@
     </footer>
 
     <script type="text/javascript" src="scripts/director.js"></script>
+    <script src="scripts/mmenu.js"></script>
+    <script>
+      new Mmenu(document.querySelector("#menu"));
+      document.addEventListener("click", function (evnt) {
+        var anchor = evnt.target.closest('a[href^="#/"]');
+      });
+    </script>
 
   </body>
 
