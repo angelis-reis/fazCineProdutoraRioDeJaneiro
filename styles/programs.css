@@ -584,3 +584,125 @@ p {
     background-color: #505050;
   }
 }
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (min-width: 730px) and (max-width: 1099px) {
+
+    .footer-minimalist {
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 85px;
+    }
+
+    .footer-minimalist a,
+    p {
+    font-size: 12px;
+    font-weight: 400;
+    }
+    .btn {
+        padding-top: 50px;
+        line-height: 40px;
+        font-size: 32px;
+    }
+
+    #films {
+        grid-template-rows: repeat(9, 500px);
+    }
+
+    .small-player {
+        width:700px;
+        height: 100%;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 550px) and (max-width: 729px) {
+
+    .footer-minimalist {
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 85px;
+    }
+
+    .footer-minimalist a,
+    p {
+    font-size: 12px;
+    font-weight: 400;
+    }
+    .btn {
+        padding-top: 50px;
+        line-height: 40px;
+        font-size: 25px;
+    }
+
+    #films {
+        grid-template-rows: repeat(9, 500px);
+    }
+
+    .small-player {
+        width:530px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px) {
+
+    .footer-minimalist {
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 85px;
+    }
+
+    .footer-minimalist a,
+    p {
+    font-size: 12px;
+    font-weight: 400;
+    }
+    .btn {
+        padding-top: 50px;
+        line-height: 40px;
+        font-size: 21px;
+    }
+
+    #films {
+        grid-template-rows: repeat(9, 500px);
+    }
+
+    .small-player {
+        width:370px;
+    }
+
+
+}
+
+@media only screen and (max-width: 399px) {
+
+    .footer-minimalist {
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 85px;
+    }
+
+    .footer-minimalist a,
+    p {
+    font-size: 12px;
+    font-weight: 400;
+    }
+    .btn {
+        padding-top: 50px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+
+    #films {
+        grid-template-rows: repeat(9, 500px);
+    }
+
+    .small-player {
+        width:330px;
+    }
+}
