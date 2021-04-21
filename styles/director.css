@@ -379,13 +379,15 @@ p {
 @media only screen and (min-width: 730px) and (max-width: 1199px) {
 
     #photo {
-        background-image: url(../images/ivanOld.gif);
+        background-image: url(../images/ivanOld2.gif);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left 0px ;
+        background-position: right top 0px;
+        background-position-x: 40%;
+        background-position-y: 40%;
         display: flex;
         flex-direction: column;
-        height: 250px;
+        height: 370px;
     }
 
     #photo h4 {
@@ -393,17 +395,19 @@ p {
         margin: 0px;
         color:#ffffff;
         text-shadow: 6px 6px 8px black;
+        padding-right: 440px;
     }
 
     #photo h1 {
         color:#ffffff;
         text-shadow: 6px 6px 8px black;
+        padding-right: 440px;
     }
 
     #name {
         grid-area: name;
         color: aliceblue;
-        font-size: 40px;
+        font-size: 50px;
         letter-spacing: 0rem;
         line-height: 0;
         text-align: center;
@@ -414,7 +418,7 @@ p {
     #job {
         grid-area: job;
         color: aliceblue;
-        font-size: 25px;
+        font-size: 35px;
         letter-spacing: 0rem;
         line-height: 0px;
         text-align: center;
@@ -475,10 +479,11 @@ p {
 @media only screen and (min-width: 550px) and (max-width: 729px) {
 
     #photo {
-        background-image: url(../images/ivanOld.gif);
+        background-image: url(../images/ivanOld2.gif);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left 0px ;
+        background-position: right top 0px;
+        background-position-x: 40%;
         display: flex;
         flex-direction: column;
         height: 250px;
@@ -489,11 +494,15 @@ p {
         margin: 0px;
         color:#ffffff;
         text-shadow: 6px 6px 8px black;
+        padding-right: 240px;
+
     }
 
     #photo h1 {
         color:#ffffff;
         text-shadow: 6px 6px 8px black;
+        padding-right: 240px;
+
     }
 
     #name {
@@ -569,10 +578,11 @@ p {
 @media only screen and (min-width: 400px) and (max-width: 549px) {
 
     #photo {
-        background-image: url(../images/ivanOld.gif);
+        background-image: url(../images/ivanOld2.gif);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left 0px ;
+        background-position: right top 0px;
+        background-position-x: 40%;
         display: flex;
         flex-direction: column;
         height: 250px;
@@ -583,11 +593,15 @@ p {
         margin: 0px;
         color:#ffffff;
         text-shadow: 6px 6px 8px black;
+        padding-right: 190px;
+
     }
 
     #photo h1 {
         color:#ffffff;
         text-shadow: 6px 6px 8px black;
+        padding-right: 190px;
+
     }
 
     #name {
@@ -664,10 +678,11 @@ p {
 @media only screen and (max-width: 399px) {
 
     #photo {
-        background-image: url(../images/ivanOld.gif);
+        background-image: url(../images/ivanOld2.gif);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left 0px ;
+        background-position: right top 0px;
+        background-position-x: 40%;
         display: flex;
         flex-direction: column;
         height: 250px;
@@ -678,11 +693,13 @@ p {
         margin: 0px;
         color:#ffffff;
         text-shadow: 6px 6px 8px black;
+        padding-right: 150px;
     }
 
     #photo h1 {
         color:#ffffff;
         text-shadow: 6px 6px 8px black;
+        padding-right: 150px;
     }
 
     #name {
