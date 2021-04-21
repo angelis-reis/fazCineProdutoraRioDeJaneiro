@@ -177,7 +177,7 @@ p {
 #biography {
   display: grid;
   grid-template-columns: 2fr 3fr 0.5fr;
-  padding: 100px;
+  padding: 70px;
   grid-template-areas:
   "biography-title biography-text ..";
   color: black;
@@ -375,9 +375,6 @@ p {
         background-color: #505050;
     }
 }
-
-
-
 
 @media only screen and (min-width: 730px) and (max-width: 1199px) {
 
