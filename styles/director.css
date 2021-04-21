@@ -121,7 +121,6 @@ p {
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: right top 70px;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 350px 60px 60px;
@@ -289,4 +288,118 @@ p {
     body {
         background-color: #505050;
     }
+}
+
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (min-width: 730px) and (max-width: 1099px) {
+
+
+}
+
+@media only screen and (min-width: 550px) and (max-width: 729px) {
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px) {
+
+}
+
+@media only screen and (max-width: 399px) {
+
+    #photo {
+        background-image: url(../images/ivanOld.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left 0px ;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    }
+
+    #photo h4 {
+        width: 300px;
+        margin: 0px;
+        color:#ffffff;
+        text-shadow: 6px 6px 8px black;
+    }
+
+    #photo h1 {
+        color:#ffffff;
+        text-shadow: 6px 6px 8px black;
+    }
+
+    #name {
+        grid-area: name;
+        color: aliceblue;
+        font-size: 40px;
+        letter-spacing: 0rem;
+        line-height: 0;
+        text-align: center;
+        justify-self: center;
+        padding-top: 70px;
+    }
+
+    #job {
+        grid-area: job;
+        color: aliceblue;
+        font-size: 25px;
+        letter-spacing: 0rem;
+        line-height: 0px;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        padding-right: 0px;
+        padding-left: 20px;
+    }
+
+    #biography {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        background-color: #faf2f2;
+        width: 100%;
+        padding: 0;
+        margin: 0px;
+
+    }
+
+    #biography p {
+        width: 320px;
+
+        color: black;
+        font-size: 14px;
+        letter-spacing: 0rem;
+        line-height: 1.73333;
+        text-align: justify;
+    }
+
+    #biography-title {
+        grid-area: biography-title;
+        justify-self: center;
+        font-size: 28px;
+        margin-left: 40px;
+        padding-top: 30px;
+        line-height: 0px;
+    }
+
+    #biography-text {
+        margin-left: auto;
+        margin-right: auto;
+
+        grid-area: biography-text;
+        align-self: start;
+        justify-self: center;
+    }
+
+    #biography-text p {
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 50px;
+    }
+
 }
