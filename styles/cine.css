@@ -411,6 +411,7 @@ h1 {
   grid-area: film0;
   background-image: url(../images/films/cinema/film0.png);
   background-size: cover;
+  background-position: center;
 }
 
 #film1 {
@@ -634,6 +635,11 @@ p {
         height: 100%;
     }
 
+    #depois {
+        display: inherit;
+        padding-bottom: 270px;
+    }
+
 
 
 }
@@ -662,6 +668,11 @@ p {
 
     .small-player {
         width:530px;
+    }
+
+    #depois {
+        display: inherit;
+        padding-bottom: 270px;
     }
 
 
@@ -694,6 +705,11 @@ p {
         width:370px;
     }
 
+    #depois {
+        display: inherit;
+        padding-bottom: 270px;
+    }
+
 
 }
 
@@ -712,7 +728,8 @@ p {
     .btn {
         padding-top: 50px;
         line-height: 40px;
-        font-size: 18px;
+        font-size: 22px;
+        font-weight: 800;
     }
 
     #films {
@@ -721,5 +738,10 @@ p {
 
     .small-player {
         width:330px;
+    }
+
+    #depois {
+        display: inherit;
+        padding-bottom: 270px;
     }
 }
