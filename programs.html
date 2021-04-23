@@ -11,7 +11,7 @@
     <!-- WebVídeos+Projetos Especiais -->
 
     <link rel="stylesheet" type="text/css" href="styles/programs.css">
-    <link type="text/css" rel="stylesheet" href="styles/mmenu.css" />
+    <link type="text/css" rel="stylesheet" href="styles/stickNavbar.css" />
 
 
     <!-- Favicon -->
@@ -76,41 +76,45 @@
 
     </header>
 
-    <!-- <header class="header-mobile"> -->
+    <header class="page-header-mobile">
+        <nav>
+            <div class="trigger-menu-wrapper">
+                <button class="trigger-menu">
+                    <svg viewBox="0 0 100 80" width="40" height="40">
+                        <rect width="80" height="8"></rect>
+                        <rect y="25" width="80" height="8"></rect>
+                        <rect y="50" width="80" height="8"></rect>
+                    </svg>
+                    <!-- <span>MENU</span> -->
+                </button>
+                    <a href="index.html">
+                        <img
+                            id="logo-mobile"
+                            src="images/logo.png"
+                            alt="Logo FazCine Produtora"
+                        />
+                    </a>
+            </div>
+            <ul class="menu">
+                <li>
 
-    <div id="page" class="header-mobile">
-        <div class="header">
-            <a href="#menu"><span></span></a>
+                    <ul class="sub-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cine.html">Cinema e TV</a></li>
+                        <li><a href="programs.html">Projetos Especiais</a></li>
+                        <li><a href="institutions.html">Institucionais</a></li>
+                        <li><a href="director.html">Quem Somos</a></li>
+                        <li><a href="contacts.html">Contatos</a></li>
+                        <li>
+                            <a class="social-icons"target="_blank" href="https://www.facebook.com/fazcine2016/">
+                            <img src="images/face-icon.png" />
+                            </a>
+                        </li>
+                </li>
 
-            <img
-            id="logo-mobile"
-            href="index.html"
-            src="images/logo.png"
-            alt="Logo FazCine Produtora"
-            />
-        </div>
-
-        <nav id="menu">
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cine.html">Cinema e TV</a></li>
-            <li><a href="programs.html">Projetos Especiais</a></li>
-            <li><a href="institutions.html">Institucionais</a></li>
-            <li><a href="director.html">Quem Somos</a></li>
-            <li><a href="contacts.html">Contatos</a></li>
-            <li>
-                <a class="social-icons"target="_blank" href="https://www.facebook.com/fazcine2016/">
-                <img src="images/face-icon.png" />
-                </a>
-                <!-- <a class="social-icons" target="_blank" href="https://www.facebook.com/fazcine2016/">
-                <img src="images/linkedin-icon.png" />
-                </a> -->
-            </li>
             </ul>
         </nav>
-    </div>
-
-    <!-- </header> -->
+    </header>
 
 
 
@@ -263,13 +267,8 @@
     </footer>
 
     <script type="text/javascript" src="scripts/programs.js"></script>
-    <script src="scripts/mmenu.js"></script>
-    <script>
-      new Mmenu(document.querySelector("#menu"));
-      document.addEventListener("click", function (evnt) {
-        var anchor = evnt.target.closest('a[href^="#/"]');
-      });
-    </script>
+    <script src="scripts/stickNavbar.js"></script>
+
 
   </body>
 
