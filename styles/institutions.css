@@ -403,7 +403,7 @@ body {
   display: grid;
   place-items: center;
   grid-area: film2;
-  background-image: url(../images/films/intitutions/film2.png);
+  background-image: url(../images/films/intitutions/film2.jpg);
   background-size: cover;
 }
 
