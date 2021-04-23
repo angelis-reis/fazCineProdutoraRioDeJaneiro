@@ -10,7 +10,6 @@ p {
 
 .header-minimalist {
   display: grid;
-  /* display: none; */
   position: fixed;
   z-index: 99;
   background-color: black;
@@ -130,15 +129,17 @@ p {
     "job .."
 }
 
+#photo h1 {
+    color:#000000;
+}
+
 #photo h4 {
   width: 300px;
   margin: 0px;
   color:#000000;
 }
 
-#photo h1 {
-    color:#000000;
-}
+
 
 #name {
   grid-area: name;
@@ -146,8 +147,12 @@ p {
   font-size: 8.125rem;
   letter-spacing: 0rem;
   line-height: 1.03333;
-  text-align: left;
   justify-self: end;
+  display: grid;
+}
+
+#name h1 {
+    align-self: end;
 }
 
 #job {
@@ -162,17 +167,7 @@ p {
   padding-right: 360px;
 }
 
-#personal-contacts {
-  grid-area: personal-contacts;
-  color: aliceblue;
-  font-size: 40px;
-  letter-spacing: 0rem;
-  line-height: 1.03333;
-  text-align: right;
-  align-self: start;
-  justify-self: end;
-  padding-right: 295px;
-}
+
 
 #biography {
   display: grid;
@@ -700,6 +695,7 @@ p {
         color:#ffffff;
         text-shadow: 6px 6px 8px black;
         padding-right: 150px;
+
     }
 
     #name {
