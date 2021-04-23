@@ -39,12 +39,7 @@ a:active {
   transition: 200ms font-size ease-in;
 }
 
-#logo-mobile {
-  /* display: none; */
-  width: 70px;
-  height: auto;
-  padding-top: 6px;
-}
+
 
 .social-icons img {
   width: 50px;

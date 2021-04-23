@@ -1,0 +1,128 @@
+/* RESET RULES & HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --white: #fff;
+  --black: #221f1f;
+  --lightpurple: #9e91f2;
+}
+
+* {
+  /* margin: 0; */
+  /* padding: 0;
+  box-sizing: border-box; */
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* body {
+  position: relative;
+  font: 16px/1.5 sans-serif;
+  color: var(--white);
+} */
+
+.trigger-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 2;
+  background: #000000;
+  transition: transform 0.4s;
+}
+#logo-mobile {
+  /* display: none; */
+  width: 60px;
+  height: auto;
+}
+
+.page-header-mobile .trigger-menu {
+
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--white);
+  letter-spacing: .2em;
+  color: var(--white)
+}
+
+.page-header-mobile .trigger-menu svg {
+  fill: var(--white);
+  margin-right: 8px;
+  padding-top: 10px;
+  transition: transform 0.5s;
+}
+
+.page-header-mobile .menu {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  text-align: center;
+  padding: 15vh 0 5vh;
+  overflow: auto;
+  z-index: 1;
+  background: #000000;
+  line-height: 50px;
+  color: var(--white)
+}
+
+.page-header-mobile .menu a {
+  font-size: 3rem;
+}
+
+.page-header-mobile .sub-menu a {
+  font-size: 1.5rem;
+}
+
+/* BODY CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu-open {
+  overflow: hidden;
+}
+
+.menu-open .trigger-menu-wrapper {
+  background: transparent;
+}
+
+.menu-open .page-header-mobile .menu {
+  display: block;
+}
+
+.menu-open .page-header-mobile svg {
+  transform: rotate(180deg);
+}
+
+.scroll-down .trigger-menu-wrapper {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .trigger-menu-wrapper {
+  transform: none;
+}
+
+.scroll-up:not(.menu-open) .trigger-menu-wrapper {
+  background: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
