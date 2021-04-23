@@ -33,12 +33,6 @@ p {
   transition: 200ms font-size ease-in;
 }
 
-#logo-mobile {
-  /* display: none; */
-  width: 70px;
-  height: auto;
-  padding-top: 6px;
-}
 
 .social-icons img {
   width: 50px;
@@ -151,9 +145,9 @@ p {
   display: grid;
 }
 
-#name h1 {
+/* #name h1 {
     align-self: end;
-}
+} */
 
 #job {
   grid-area: job;

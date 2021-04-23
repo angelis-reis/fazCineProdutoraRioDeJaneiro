@@ -7,9 +7,9 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0;
+  box-sizing: border-box; */
 }
 
 button {
@@ -44,7 +44,6 @@ a {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-
   z-index: 2;
   background: #000000;
   transition: transform 0.4s;
@@ -56,13 +55,13 @@ a {
 }
 
 .page-header-mobile .trigger-menu {
+
   display: flex;
   align-items: center;
   font-size: 1.3rem;
   color: var(--white);
   letter-spacing: .2em;
   color: var(--white)
-
 }
 
 .page-header-mobile .trigger-menu svg {
@@ -73,6 +72,7 @@ a {
 }
 
 .page-header-mobile .menu {
+  margin: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -86,8 +86,6 @@ a {
   background: #000000;
   line-height: 50px;
   color: var(--white)
-
-
 }
 
 .page-header-mobile .menu a {
@@ -97,7 +95,6 @@ a {
 .page-header-mobile .sub-menu a {
   font-size: 1.5rem;
 }
-
 
 /* BODY CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
